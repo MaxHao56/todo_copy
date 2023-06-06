@@ -1,0 +1,28 @@
+GET http://localhost:3001/todos HTTP/1.1
+
+###
+
+POST http://localhost:3001/todo/new
+Content-Type: application/json
+
+{
+	"text": "Create New Projects"
+}
+
+###
+
+DELETE http://localhost:3001/todo/delete/6472733f48f5b5a99b41e120
+
+###
+
+GET http://localhost:3001/todo/complete/6472736b48f5b5a99b41e124
+
+###
+
+PUT http://localhost:3001/todo/update/6472736b48f5b5a99b41e124
+Content-Type: application/json
+
+{
+	"text": "Go Shopping for Milk"
+}
+
